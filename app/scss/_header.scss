@@ -1,3 +1,9 @@
 .header {
    z-index: 10;
+   &__scroll {
+      height: 100rem;
+      width: 100rem;
+      border: 1px #fff solid;
+      border-radius: 50%;
+   }
 }
