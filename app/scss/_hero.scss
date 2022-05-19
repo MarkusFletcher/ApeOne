@@ -1,0 +1,17 @@
+.hero {
+   height: 100vh;
+   min-height: 800px;
+   position: relative;
+   z-index: 1;
+
+   &__bg {
+      object-fit: cover;
+      z-index: -1;
+   }
+
+   .mask {
+      background-color: #000;
+      opacity: .7;
+      z-index: -1;
+   }
+}

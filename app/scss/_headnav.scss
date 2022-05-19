@@ -1,0 +1,38 @@
+.headnav {
+   &__list {
+      position: relative;
+      padding-left: 27rem;
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         width: 1px;
+         background-color: #fff;
+      }
+   }
+   &__item {
+      line-height: 1;
+      margin-bottom: 40rem;
+   }
+   &__num {
+      font-size: 12rem;
+   }
+   &__link {
+      font-size: 25rem;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         height: 1px;
+         transition: background-color .3s ease;
+      }
+      &:hover::after {
+         background-color: #fff;
+      }
+   }
+}
