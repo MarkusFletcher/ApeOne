@@ -1,0 +1,19 @@
+.about {
+   h2 {
+      margin-bottom: 100px;
+   }
+   &__desc {
+      margin-left: 220px;
+      max-width: 550rem;
+      margin-bottom: 105rem;
+   }
+   &__keywords {
+      font-size: 50rem;
+      font-weight: 300;
+      span {
+         padding-right: 45rem;
+         padding-left: 45rem;
+         border-bottom: 1px solid #fff;
+      }
+   }
+}

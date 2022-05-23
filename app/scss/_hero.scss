@@ -1,14 +1,43 @@
 .hero {
-   height: 100vh;
-   min-height: 800px;
    position: relative;
    z-index: 1;
 
+   &__main {
+      height: 100vh;
+      min-height: 800px;
+      padding-top: 83rem;
+   }
+   h1 {
+      margin-bottom: 84rem;
+   }
+   &__counter {
+      font-size: 31rem;
+      position: relative;
+      min-width: 280px;
+      padding-left: 20rem;
+      padding-right: 20rem;
+      & button {
+         color: #fff;
+         font-size: inherit;
+         background-color: transparent;
+         border: none;
+         cursor: pointer;
+         min-width: 40px;
+      }
+      &::after {
+         content: '';
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         height: 1px;
+         background-color: #fff;
+      }
+   }
    &__bg {
       object-fit: cover;
       z-index: -1;
    }
-
    .mask {
       background-color: #000;
       opacity: .7;

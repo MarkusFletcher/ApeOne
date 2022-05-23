@@ -1,5 +1,5 @@
 .headnav {
-   &__list {
+   ul {
       position: relative;
       padding-left: 27rem;
       &::before {
@@ -12,27 +12,27 @@
          background-color: #fff;
       }
    }
-   &__item {
+   li {
       line-height: 1;
       margin-bottom: 40rem;
+      a {
+         font-size: 25rem;
+         position: relative;
+         &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            transition: background-color .3s ease;
+         }
+         &:hover::after {
+            background-color: #fff;
+         }
+      }
    }
    &__num {
-      font-size: 12rem;
-   }
-   &__link {
-      font-size: 25rem;
-      position: relative;
-      &::after {
-         content: '';
-         position: absolute;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         height: 1px;
-         transition: background-color .3s ease;
-      }
-      &:hover::after {
-         background-color: #fff;
-      }
+      font-size: 12px;
    }
 }

@@ -1,0 +1,49 @@
+.roadmap {
+   ol {
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         bottom: 0;
+         width: 30rem;
+         background-color: blueviolet;
+      }
+   }
+   li {
+      padding-left: 70rem;
+      list-style-position: inside;
+      list-style-type: decimal;
+      position: relative;
+      &:not(:last-child)::after {
+         content: '';
+         position: absolute;
+         left: 5rem;
+         top: 49rem;
+         bottom: -32rem;
+         width: 5px;
+         border-left: 1px solid #fff;
+         border-right: 1px solid #fff;
+         background-color: #000;
+      }
+      &::before{
+         content: '';
+         position: absolute;
+         top: 31rem;
+         left: 0;
+         height: 16px;
+         width: 16px;
+         border-radius: 50%;
+         border: 1px solid #fff;
+         background-color: #000;
+      }
+   }
+   h3 {
+      display: inline;
+   }
+   h3, li {
+      font-size: 35rem;
+      font-weight: 500;
+   }
+}
