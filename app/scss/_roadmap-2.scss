@@ -1,0 +1,26 @@
+.roadmap-2 {
+   $padding-left: 50rem;
+   .container {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+   }
+   li {
+      margin-bottom: 60rem;
+   }
+   .num {
+      font-size: 25rem;
+      margin-bottom: 16rem;
+      padding-left: $padding-left;
+   }
+   h3 {
+      line-height: 1.44;
+      font-weight: 300;
+      display: inline-block;
+      padding: 13rem $padding-left 17rem;
+      margin-bottom: 22rem;
+      border: 1px solid rgba($color: #fff, $alpha: .5);
+      border-radius: 10rem;
+   }
+   p {
+      padding-left: $padding-left;
+   }
+}

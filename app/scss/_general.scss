@@ -153,9 +153,10 @@ section {
 }
 
 .container {
-	max-width: 80%;
-	margin: 0 auto;
-	padding-left: 100rem;
+	// max-width: 94%;
+	// margin: 0 auto;
+	// padding-left: 308rem;
+	margin: 0 53rem 0 360rem;
 	padding-top: 120rem;
 }
 
@@ -243,6 +244,9 @@ img, picture {
 section {
 	padding-left: 90rem;
 	padding-right: 90rem;
+	h2 {
+      margin-bottom: 100rem;
+   }
 }
 .text {
 	&-center {

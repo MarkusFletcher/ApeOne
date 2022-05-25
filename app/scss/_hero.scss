@@ -10,13 +10,17 @@
    h1 {
       margin-bottom: 84rem;
    }
+   &__mint {
+      min-width: 282px;
+      margin-bottom: 340rem;
+   }
    &__counter {
       font-size: 31rem;
       position: relative;
       min-width: 280px;
       padding-left: 20rem;
       padding-right: 20rem;
-      border-bottom: 1px solid #fff
+      border-bottom: 1px solid #fff;
       button {
          color: #fff;
          font-size: inherit;
@@ -25,6 +29,19 @@
          cursor: pointer;
          min-width: 40px;
       }
+   }
+   &__sale-info {
+
+   }
+   &__sale-type {
+      font-size: 45rem;
+   }
+   &__sale-time {
+      font-size: 22rem;
+      line-height: 1.2;
+      font-weight: 100;
+      padding: 0 45rem 30rem;
+      border-bottom: 1px solid #fff;
    }
    &__bg {
       object-fit: cover;
