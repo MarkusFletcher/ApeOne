@@ -5,11 +5,12 @@
    }
    li {
       margin-bottom: 60rem;
-   }
-   .num {
-      font-size: 25rem;
-      margin-bottom: 16rem;
-      padding-left: $padding-left;
+      .num {
+         font-size: 25rem;
+         font-weight: 300;
+         margin-bottom: 16rem;
+         padding-left: $padding-left;
+      }
    }
    h3 {
       line-height: 1.44;

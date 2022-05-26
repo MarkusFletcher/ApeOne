@@ -1,9 +1,14 @@
 .collection {
+   .container {
+      gap: 200px;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+   }
    &__info {
       width: 42%;
    }
    img {
       width: 58%;
+      height: auto;
    }
    h2 {
       margin-bottom: 144rem;
