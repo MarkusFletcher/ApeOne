@@ -140,11 +140,6 @@ body {
 	font-family: 'GTFlexa';
 }
 
-section {
-	padding-left: 90rem;
-	padding-right: 90rem;
-}
-
 .overflow {
 	position: relative;
 	width: 100%;
@@ -242,8 +237,8 @@ img, picture {
 }
 
 section {
-	padding-left: 90rem;
-	padding-right: 90rem;
+	margin-left: 90rem;
+	margin-right: 90rem;
 	h2 {
       margin-bottom: 100rem;
    }

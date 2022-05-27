@@ -1,0 +1,32 @@
+.footer {
+   position: relative;
+   z-index: 11;
+   background-color: #000;
+   margin-left: 90rem;
+	margin-right: 90rem;
+   padding-bottom: 100rem;
+   h2 {
+      font-size: 50rem;
+      margin: 16rem 0 24rem;
+   }
+   p {
+      font-size: 18rem;
+   }
+   &__desc {
+      flex-basis: 50%;
+      gap: 83rem;
+      padding-top: 100rem;
+      padding-bottom: 100rem;
+      border-top: 1px solid rgba($color: #fff, $alpha: .5);
+      border-right: 1px solid rgba($color: #fff, $alpha: .5);
+      border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+   }
+   &__logo {
+      width: 300rem;
+   }
+   &__actions {
+      ul {
+         column-count: 2;
+      }
+   }
+}
