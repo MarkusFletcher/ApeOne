@@ -1,6 +1,7 @@
 .roadmap {
    ol {
       position: relative;
+
       &::before {
          content: '';
          position: absolute;
@@ -11,11 +12,13 @@
          background-color: blueviolet;
       }
    }
+
    li {
       padding-left: 70rem;
       list-style-position: inside;
       list-style-type: decimal;
       position: relative;
+
       &:not(:last-child)::after {
          content: '';
          position: absolute;
@@ -27,7 +30,8 @@
          border-right: 1px solid #fff;
          background-color: #000;
       }
-      &::before{
+
+      &::before {
          content: '';
          position: absolute;
          top: 31rem;
@@ -39,10 +43,13 @@
          background-color: #000;
       }
    }
+
    h3 {
       display: inline;
    }
-   h3, li {
+
+   h3,
+   li {
       font-size: 35rem;
       font-weight: 500;
    }

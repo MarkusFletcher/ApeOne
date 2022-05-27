@@ -2,15 +2,18 @@
    &__title {
       flex-basis: 22%;
    }
+
    &__items {
-      flex-basis:  60%;
+      flex-basis: 60%;
       padding-top: 50rem;
       border-top: 1px solid rgba($color: #fff, $alpha: 1.0);
    }
+
    li {
       margin-bottom: 90rem;
       gap: 100rem;
-      .num  {
+
+      .num {
          font-size: 25rem;
          font-weight: 300;
       }

@@ -1,5 +1,6 @@
 .sale-bar {
    font-size: 26rem;
+
    div {
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
@@ -9,6 +10,7 @@
       &:not(:last-child) {
          margin-right: 29rem;
          position: relative;
+
          &::after {
             content: '';
             position: absolute;

@@ -1,35 +1,36 @@
-@font-face { 
-   font-family: 'font';  
-   font-weight: 200;  
-   font-style: normal;
-   unicode-range: U+000-5FF;
-   src: local('font'),
-       url('../fonts/font.woff2') format('woff2'),
-       url('../fonts/font.woff') format('woff'),
-       url('../fonts/font.ttf') format('ttf'),
-       url('../fonts/font.eot') format('eot');
-   font-display: swap;
+@font-face {
+	font-family: 'font';
+	font-weight: 200;
+	font-style: normal;
+	unicode-range: U+000-5FF;
+	src: local('font'),
+		url('../fonts/font.woff2') format('woff2'),
+		url('../fonts/font.woff') format('woff'),
+		url('../fonts/font.ttf') format('ttf'),
+		url('../fonts/font.eot') format('eot');
+	font-display: swap;
 }
-@font-face { 
-   font-family: 'font';  
-   font-weight: 300;  
-   font-style: normal;
-   unicode-range: U+000-5FF;
-   src: local('font'),
-       url('../fonts/font.woff2') format('woff2'),
-       url('../fonts/font.woff') format('woff'),
-       url('../fonts/font.ttf') format('ttf'),
-       url('../fonts/font.eot') format('eot');
-   font-display: swap;
+
+@font-face {
+	font-family: 'font';
+	font-weight: 300;
+	font-style: normal;
+	unicode-range: U+000-5FF;
+	src: local('font'),
+		url('../fonts/font.woff2') format('woff2'),
+		url('../fonts/font.woff') format('woff'),
+		url('../fonts/font.ttf') format('ttf'),
+		url('../fonts/font.eot') format('eot');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Thin.eot');
 	src: url('../fonts/GTFlexa-Thin.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/GTFlexa-Thin.woff2') format('woff2'),
-		 url('../fonts/GTFlexa-Thin.woff') format('woff'),
-		 url('../fonts/GTFlexa-Thin.ttf') format('truetype');
+		url('../fonts/GTFlexa-Thin.woff2') format('woff2'),
+		url('../fonts/GTFlexa-Thin.woff') format('woff'),
+		url('../fonts/GTFlexa-Thin.ttf') format('truetype');
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;
@@ -39,9 +40,9 @@
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Bold.eot');
 	src: url('../fonts/GTFlexa-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/GTFlexa-Bold.woff2') format('woff2'),
-		 url('../fonts/GTFlexa-Bold.woff') format('woff'),
-		 url('../fonts/GTFlexa-Bold.ttf') format('truetype');
+		url('../fonts/GTFlexa-Bold.woff2') format('woff2'),
+		url('../fonts/GTFlexa-Bold.woff') format('woff'),
+		url('../fonts/GTFlexa-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -51,9 +52,9 @@
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Regular.eot');
 	src: url('../fonts/GTFlexa-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/GTFlexa-Regular.woff2') format('woff2'),
-		 url('../fonts/GTFlexa-Regular.woff') format('woff'),
-		 url('../fonts/GTFlexa-Regular.ttf') format('truetype');
+		url('../fonts/GTFlexa-Regular.woff2') format('woff2'),
+		url('../fonts/GTFlexa-Regular.woff') format('woff'),
+		url('../fonts/GTFlexa-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -63,9 +64,9 @@
 	font-family: 'PPSupplySans';
 	src: url('../fonts/PPSupplySans-Ultralight.eot');
 	src: url('../fonts/PPSupplySans-Ultralight.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/PPSupplySans-Ultralight.woff2') format('woff2'),
-		 url('../fonts/PPSupplySans-Ultralight.woff') format('woff'),
-		 url('../fonts/PPSupplySans-Ultralight.ttf') format('truetype');
+		url('../fonts/PPSupplySans-Ultralight.woff2') format('woff2'),
+		url('../fonts/PPSupplySans-Ultralight.woff') format('woff'),
+		url('../fonts/PPSupplySans-Ultralight.ttf') format('truetype');
 	font-weight: 200;
 	font-style: normal;
 	font-display: swap;
@@ -75,9 +76,9 @@
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Light.eot');
 	src: url('../fonts/GTFlexa-Light.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/GTFlexa-Light.woff2') format('woff2'),
-		 url('../fonts/GTFlexa-Light.woff') format('woff'),
-		 url('../fonts/GTFlexa-Light.ttf') format('truetype');
+		url('../fonts/GTFlexa-Light.woff2') format('woff2'),
+		url('../fonts/GTFlexa-Light.woff') format('woff'),
+		url('../fonts/GTFlexa-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -87,9 +88,9 @@
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Medium.eot');
 	src: url('../fonts/GTFlexa-Medium.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/GTFlexa-Medium.woff2') format('woff2'),
-		 url('../fonts/GTFlexa-Medium.woff') format('woff'),
-		 url('../fonts/GTFlexa-Medium.ttf') format('truetype');
+		url('../fonts/GTFlexa-Medium.woff2') format('woff2'),
+		url('../fonts/GTFlexa-Medium.woff') format('woff'),
+		url('../fonts/GTFlexa-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -113,21 +114,22 @@ li {
 
 input,
 button,
-select, 
+select,
 textarea {
 	-webkit-appearance: none;
+
 	&:focus {
 		outline: none;
 	}
 }
 
 @function px($value) {
-    $remValue:  calc((#{$value} * 100vw / 1920));
-    @return $remValue;
+	$remValue: calc((#{$value} * 100vw / 1920));
+	@return $remValue;
 }
 
 html {
- 	font-size: px(1);
+	font-size: px(1);
 }
 
 body {
@@ -161,9 +163,11 @@ body {
 	left: 0;
 	padding: 100rem 90rem 50rem;
 }
+
 .header {
 	height: 100%;
 }
+
 .social {
 	left: auto;
 	right: 0;
@@ -175,39 +179,50 @@ body {
 
 .flex {
 	display: flex;
+
 	&.jcsb {
 		justify-content: space-between;
 	}
+
 	&.jcsa {
 		justify-content: space-around;
 	}
+
 	&.jcse {
 		justify-content: space-evenly;
 	}
+
 	&.jcc {
 		justify-content: center;
 	}
+
 	&.jcfe {
 		justify-content: flex-end;
 	}
+
 	&.aic {
 		align-items: center;
 	}
+
 	&.aife {
 		align-items: flex-end;
 	}
+
 	&.aifs {
 		align-items: flex-start;
 	}
+
 	& .half {
 		width: 50%;
 	}
+
 	&.col {
 		flex-direction: column;
 	}
 }
 
-img, picture {
+img,
+picture {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -239,10 +254,12 @@ img, picture {
 section {
 	margin-left: 90rem;
 	margin-right: 90rem;
+
 	h2 {
-      margin-bottom: 100rem;
-   }
+		margin-bottom: 100rem;
+	}
 }
+
 .text {
 	&-center {
 		text-align: center;
@@ -261,19 +278,23 @@ section {
 	transition: .3s;
 	border: 1px #fff solid;
 	border-radius: 8px;
+
 	&:focus {
 		outline: none;
 	}
+
 	&:hover {
 		background: #000;
 		color: #fff;
 		transition: .3s;
 	}
+
 	&.button_outline {
 		color: #fff;
 		background-color: transparent;
 	}
 }
+
 .fixed-bar {
 	position: fixed;
 	top: 0;
@@ -281,14 +302,17 @@ section {
 	&.left {
 		left: 0;
 	}
+
 	&.right {
 		right: 0;
 	}
 }
+
 h1 {
 	font-size: 60rem;
 	font-weight: 400;
 	line-height: 1.2;
+
 	span {
 		font-weight: 100;
 	}
@@ -298,9 +322,11 @@ h2 {
 	font-size: 70rem;
 	font-weight: 500;
 	line-height: 1.03;
+
 	&.regular {
 		font-weight: 400;
 	}
+
 	span {
 		font-weight: 100;
 	}
@@ -317,13 +343,9 @@ h4 {
 	line-height: 1.2;
 }
 
-h5 {
+h5 {}
 
-}
-
-h6 {
-
-}
+h6 {}
 
 p {
 	font-family: 'PPSupplySans';
@@ -331,4 +353,3 @@ p {
 	font-size: 25rem;
 	line-height: 1.2;
 }
-

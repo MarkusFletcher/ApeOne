@@ -2,6 +2,7 @@
    ul {
       position: relative;
       padding-left: 27rem;
+
       &::before {
          content: '';
          position: absolute;
@@ -12,15 +13,19 @@
          background-color: #fff;
       }
    }
+
    li {
       line-height: 1;
       margin-bottom: 40rem;
+
       .num {
          font-size: 12px;
       }
+
       a {
          font-size: 25rem;
          position: relative;
+
          &::after {
             content: '';
             position: absolute;
@@ -30,6 +35,7 @@
             height: 1px;
             transition: background-color .3s ease;
          }
+
          &:hover::after {
             background-color: #fff;
          }
