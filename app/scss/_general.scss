@@ -278,6 +278,7 @@ section {
 	transition: .3s;
 	border: 1px #fff solid;
 	border-radius: 8px;
+	cursor: pointer;
 
 	&:focus {
 		outline: none;
@@ -292,6 +293,11 @@ section {
 	&.button_outline {
 		color: #fff;
 		background-color: transparent;
+	}
+
+	&.button_outline:hover {
+		color: #000;
+		background-color: #fff;
 	}
 }
 
