@@ -14,7 +14,7 @@
 
    &__mint {
       min-width: 282px;
-      margin-bottom: 340rem;
+      margin-bottom: 100rem;
    }
 
    &__counter {
@@ -35,7 +35,9 @@
       }
    }
 
-   &__sale-info {}
+   &__sale-info {
+      margin-top: auto;
+   }
 
    &__sale-type {
       font-size: 45rem;
