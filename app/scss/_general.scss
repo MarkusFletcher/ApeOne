@@ -135,7 +135,7 @@ html {
 body {
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.2;
 	overflow-x: hidden;
 	background-color: #000;
 	color: #fff;
@@ -318,7 +318,6 @@ section {
 h1 {
 	font-size: 60rem;
 	font-weight: 400;
-	line-height: 1.2;
 
 	span {
 		font-weight: 100;
@@ -329,6 +328,7 @@ h2 {
 	font-size: 70rem;
 	font-weight: 500;
 	line-height: 1.03;
+	letter-spacing: -0.04em;
 
 	&.regular {
 		font-weight: 400;
@@ -350,7 +350,6 @@ h3 {
 h4 {
 	font-size: 35rem;
 	font-weight: 300;
-	line-height: 1.2;
 }
 
 h5 {}
@@ -361,6 +360,5 @@ p {
 	font-family: 'PPSupplySans';
 	font-weight: 200;
 	font-size: 25rem;
-	line-height: 1.2;
 	letter-spacing: 0;
 }

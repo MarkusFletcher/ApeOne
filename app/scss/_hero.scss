@@ -30,8 +30,7 @@
       letter-spacing: normal;
       position: relative;
       min-width: 280px;
-      padding-left: 20rem;
-      padding-right: 20rem;
+      padding: 5rem 20rem;
       border-bottom: 1px solid #fff;
 
       button {
@@ -52,11 +51,11 @@
 
    &__sale-type {
       font-size: 45rem;
+      line-height: 1.65;
    }
 
    &__sale-time {
       font-size: 22rem;
-      line-height: 1.2;
       font-weight: 100;
       letter-spacing: normal;
       padding: 0 45rem 30rem;

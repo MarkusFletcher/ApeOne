@@ -7,6 +7,7 @@
    margin-right: 90rem;
 
    h2 {
+      font-weight: 400;
       font-size: 50rem;
       margin: 16rem 0 24rem;
    }
@@ -33,6 +34,7 @@
    }
 
    &__actions {
+      gap: 46rem;
       border-left: 1px solid rgba($color: #fff, $alpha: .5);
       padding-left: 120rem;
       ul {
@@ -40,7 +42,7 @@
       }
 
       li:not(:nth-child(4n+4)){
-         margin-bottom: 30rem;
+         margin-bottom: 48rem;
       }
       li {
          a {
@@ -50,12 +52,21 @@
 
       .button {
          text-transform: uppercase;
+         padding: 7rem;
       }
    }
 
    &__soc {
       height: 32rem;
-      background-color: red;
+
+      a {
+         height: 30rem;
+         width: 30rem;
+
+         // placeholder
+         border-radius: 50%;
+         background-color: #fff;
+      }
    }
 
    &__copy {
