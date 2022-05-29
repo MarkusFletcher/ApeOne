@@ -25,8 +25,11 @@
    }
 
    &__desc {
-      gap: 83rem;
+      gap: 80rem;
       padding-right: 60rem;
+      p:first-child {
+         margin-bottom: 34rem;
+      }
    }
 
    &__logo {
