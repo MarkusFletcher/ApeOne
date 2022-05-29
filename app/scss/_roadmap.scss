@@ -9,18 +9,18 @@
          top: 0;
          bottom: 0;
          width: 30rem;
-         background-color: blueviolet;
+         border: 1px solid gray;
       }
    }
 
    li {
-      padding-left: 70rem;
+      padding-left: 74rem;
       list-style-position: inside;
       list-style-type: decimal;
       position: relative;
       
       &:not(:last-child){
-         padding-bottom: 60rem;
+         padding-bottom: 68rem;
 
          &::after {
             content: '';
@@ -56,7 +56,8 @@
    }
 
    h3 {
-      display: inline;
+      display: inline-block;
+      margin-bottom: 8rem;
    }
 
    h3,

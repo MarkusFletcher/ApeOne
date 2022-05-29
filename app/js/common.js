@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	let scrollHeight = document.scrollingElement.scrollHeight - window.innerHeight,
 	    currentScroll;
+	let showScroll = qs('.js-scroll');
 	window.onscroll = () => {
 	    currentScroll = document.scrollingElement.scrollTop;
-	    // console.log(Math.round(currentScroll / scrollHeight * 100))
+		currentScroll = Math.round(currentScroll / scrollHeight * 100);
+	    showScroll.innerHTML = (currentScroll < 10 ? '0' : '') + currentScroll + '%';
 	}
 
 	
