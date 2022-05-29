@@ -1,8 +1,12 @@
 .roadmap-2 {
-   $padding-left: 50rem;
+   $padding-left: 46rem;
 
    .container {
       border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+   }
+
+   ul {
+      padding-left: 72rem;
    }
 
    li {
@@ -24,6 +28,12 @@
       margin-bottom: 22rem;
       border: 1px solid rgba($color: #fff, $alpha: .5);
       border-radius: 10rem;
+   }
+
+   img {
+      width: 636rem;
+      object-fit: contain;
+      margin-top: auto;
    }
 
    p {

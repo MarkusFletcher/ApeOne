@@ -55,7 +55,7 @@
 		url('../fonts/GTFlexa-Regular.woff2') format('woff2'),
 		url('../fonts/GTFlexa-Regular.woff') format('woff'),
 		url('../fonts/GTFlexa-Regular.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
@@ -140,6 +140,7 @@ body {
 	background-color: #000;
 	color: #fff;
 	font-family: 'GTFlexa';
+	// letter-spacing: -1.5em;
 }
 
 .overflow {
@@ -153,7 +154,7 @@ body {
 	// max-width: 94%;
 	// margin: 0 auto;
 	// padding-left: 308rem;
-	margin: 0 53rem 0 360rem;
+	margin: 0 79rem 0 356rem;
 	padding-top: 120rem;
 }
 
@@ -161,7 +162,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 100rem 90rem 50rem;
+	padding: 100rem 93rem 50rem;
 }
 
 .header {
@@ -252,8 +253,8 @@ picture {
 }
 
 section {
-	margin-left: 90rem;
-	margin-right: 90rem;
+	margin-left: 93rem;
+	margin-right: 93rem;
 
 	h2 {
 		margin-bottom: 100rem;
@@ -341,6 +342,9 @@ h2 {
 h3 {
 	font-size: 50rem;
 	font-weight: 500;
+	span {
+		font-weight: 100;
+	}
 }
 
 h4 {
@@ -358,4 +362,5 @@ p {
 	font-weight: 200;
 	font-size: 25rem;
 	line-height: 1.2;
+	letter-spacing: 0;
 }

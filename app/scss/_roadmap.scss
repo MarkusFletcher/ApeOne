@@ -18,17 +18,21 @@
       list-style-position: inside;
       list-style-type: decimal;
       position: relative;
+      
+      &:not(:last-child){
+         padding-bottom: 60rem;
 
-      &:not(:last-child)::after {
-         content: '';
-         position: absolute;
-         left: 5rem;
-         top: 49rem;
-         bottom: -32rem;
-         width: 5px;
-         border-left: 1px solid #fff;
-         border-right: 1px solid #fff;
-         background-color: #000;
+         &::after {
+            content: '';
+            position: absolute;
+            left: 5rem;
+            top: 49rem;
+            bottom: -32rem;
+            width: 5px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            background-color: #000;
+         }
       }
 
       &::before {
@@ -41,6 +45,14 @@
          border-radius: 50%;
          border: 1px solid #fff;
          background-color: #000;
+      }
+
+      span {
+         display: block;
+         font-size: 35rem;
+         font-weight: 100;
+         line-height: 1.2;
+         margin-bottom: 13rem;
       }
    }
 

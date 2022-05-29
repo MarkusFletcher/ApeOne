@@ -1,21 +1,45 @@
 .team {
+   .container {
+      padding-right: 110rem;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+   }
+
+   h2 {
+      font-weight: 400;
+   }
+
+   h3 {
+      font-size: 60rem;
+      line-height: 1.2;
+   }
+
+   h4 {
+      margin-bottom: 12rem;
+   }
+
    &__title {
-      flex-basis: 22%;
+      flex: 0 0 20%;
    }
 
    &__items {
-      flex-basis: 60%;
+      flex-grow: 1;
+      gap: 30rem;
       padding-top: 50rem;
       border-top: 1px solid rgba($color: #fff, $alpha: 1.0);
+      &>div {
+         max-width: 300rem;
+      }
    }
 
    li {
-      margin-bottom: 90rem;
-      gap: 100rem;
+      margin-bottom: 120rem;
+      gap: 164rem;
 
       .num {
          font-size: 25rem;
          font-weight: 300;
+         line-height: 1;
+         margin-bottom: 3rem;
       }
    }
 }

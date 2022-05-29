@@ -1,19 +1,27 @@
 .collection {
    .container {
-      gap: 200px;
+      gap: 134rem;
       border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
    }
 
    &__info {
-      width: 42%;
+      flex-basis: 42%;
+      padding-bottom: 162rem;
    }
 
    img {
-      width: 58%;
-      height: auto;
+      // flex-basis: 45%;
+      width: 636rem;
+      object-fit: contain;
+      margin-top: auto;
+      // height: auto;
    }
 
    h2 {
-      margin-bottom: 144rem;
+      margin-bottom: 130rem;
+   }
+
+   h3 {
+      margin-top: 45rem;
    }
 }

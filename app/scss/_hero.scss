@@ -17,8 +17,17 @@
       margin-bottom: 100rem;
    }
 
+   .button {
+      font-size: 30rem;
+      line-height: 1;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      letter-spacing: -0.01em;
+   }
+
    &__counter {
       font-size: 31rem;
+      letter-spacing: normal;
       position: relative;
       min-width: 280px;
       padding-left: 20rem;
@@ -37,7 +46,8 @@
 
    &__sale-info {
       margin-top: auto;
-      margin-bottom: 100rem;
+      margin-bottom: 45rem;
+      gap: 105rem;
    }
 
    &__sale-type {
@@ -48,6 +58,7 @@
       font-size: 22rem;
       line-height: 1.2;
       font-weight: 100;
+      letter-spacing: normal;
       padding: 0 45rem 30rem;
       border-bottom: 1px solid #fff;
    }
