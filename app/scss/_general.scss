@@ -1,30 +1,4 @@
 @font-face {
-	font-family: 'font';
-	font-weight: 200;
-	font-style: normal;
-	unicode-range: U+000-5FF;
-	src: local('font'),
-		url('../fonts/font.woff2') format('woff2'),
-		url('../fonts/font.woff') format('woff'),
-		url('../fonts/font.ttf') format('ttf'),
-		url('../fonts/font.eot') format('eot');
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'font';
-	font-weight: 300;
-	font-style: normal;
-	unicode-range: U+000-5FF;
-	src: local('font'),
-		url('../fonts/font.woff2') format('woff2'),
-		url('../fonts/font.woff') format('woff'),
-		url('../fonts/font.ttf') format('ttf'),
-		url('../fonts/font.eot') format('eot');
-	font-display: swap;
-}
-
-@font-face {
 	font-family: 'GTFlexa';
 	src: url('../fonts/GTFlexa-Thin.eot');
 	src: url('../fonts/GTFlexa-Thin.eot?#iefix') format('embedded-opentype'),
@@ -292,6 +266,7 @@ section {
 	}
 
 	&.button_outline {
+		font-weight: 300;
 		color: #fff;
 		background-color: transparent;
 	}

@@ -27,7 +27,7 @@
       padding-top: 50rem;
       border-top: 1px solid rgba($color: #fff, $alpha: 1.0);
       &>div {
-         max-width: 300rem;
+         min-width: 200rem;
       }
    }
 
