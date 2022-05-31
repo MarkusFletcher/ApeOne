@@ -1,51 +1,15 @@
 .roadmap {
    ol {
       position: relative;
-
-      // &::before {
-      //    content: '';
-      //    position: absolute;
-      //    left: 0;
-      //    top: 0;
-      //    bottom: 0;
-      //    width: 30rem;
-      //    border: 1px solid gray;
-      // }
    }
 
    li {
       padding-left: 74rem;
-      list-style-position: inside;
-      list-style-type: decimal;
       position: relative;
       
       &:not(:last-child){
          padding-bottom: 68rem;
-
-         // &::after {
-         //    content: '';
-         //    position: absolute;
-         //    left: 5rem;
-         //    top: 49rem;
-         //    bottom: -32rem;
-         //    width: 5px;
-         //    border-left: 1px solid #fff;
-         //    border-right: 1px solid #fff;
-         //    background-color: #000;
-         // }
       }
-
-      // &::before {
-      //    content: '';
-      //    position: absolute;
-      //    top: 31rem;
-      //    left: 0;
-      //    height: 16px;
-      //    width: 16px;
-      //    border-radius: 50%;
-      //    border: 1px solid #fff;
-      //    background-color: #000;
-      // }
 
       span {
          display: block;
@@ -58,11 +22,70 @@
    h3 {
       display: inline-block;
       margin-bottom: 8rem;
+      position: relative;
+
+      &::before, 
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: -74rem;
+         background-color: #000;
+         transform: translate(-50%, -50%);
+         width: 14rem;
+         height: 14rem;
+         border-radius: 50%;
+         border: 1px solid #fff;
+         transition: .15s;
+      }
+
+      &::before {
+          z-index: 1;
+      }
+      &::after {
+         z-index: 3;
+         background: #000;
+         border: none;
+      }
+      &.active::after {
+          background: #fff;
+          transition: .2s;
+      }
    }
 
    h3,
    li {
       font-size: 35rem;
       font-weight: 500;
+   }
+
+   &__cont {
+      position: relative;
+   }
+
+   &__line {
+      transform: translateX(-50%);
+      position: absolute;
+      left: 0;
+      top: 22rem;
+      height: 100%;
+      width: 8rem;
+      border: 1px solid #fff;
+      overflow: hidden;
+      background: #000;
+      z-index: 2;
+
+      span {
+         background: #fff;
+         top: 0;
+         position: absolute;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         transform-origin: top center;
+         transform: scale(1, 0, 1);
+         will-change: transform;
+         display: block;
+      }
    }
 }
