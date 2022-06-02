@@ -43,3 +43,13 @@
       }
    }
 }
+
+@media (max-width: 767px) {
+   .team {
+      &__items {
+         &>div {
+            max-width: none;
+         }
+      }
+   }
+}

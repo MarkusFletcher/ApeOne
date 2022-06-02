@@ -4,7 +4,7 @@
       padding-left: 27rem;
 
       &::before {
-         content: '';
+         content: "";
          position: absolute;
          top: 0;
          left: 0;
@@ -28,18 +28,24 @@
          position: relative;
 
          &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
             height: 1px;
-            transition: background-color .3s ease;
+            transition: background-color 0.3s ease;
          }
 
          &:hover::after {
             background-color: #fff;
          }
       }
+   }
+}
+
+@media (max-width: 767px) {
+   .headnav {
+      display: none;
    }
 }
