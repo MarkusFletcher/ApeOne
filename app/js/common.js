@@ -1,6 +1,7 @@
 history.scrollRestoration = "manual";
 
 window.onload = () => {
+
 	let line = qs('.roadmap__line'),
 		lineActive = qs('.roadmap__line span'),
 		lastListItem = qs('.roadmap__cont li:last-child'),
@@ -51,7 +52,6 @@ window.onload = () => {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-
 	let scrollHeight = document.scrollingElement.scrollHeight - window.innerHeight,
 	    currentScroll;
 	let showScroll = qs('.js-scroll');
@@ -77,6 +77,39 @@ document.addEventListener("DOMContentLoaded", function() {
 		};
 	})
 
+
+
+
+	var svgElement = qs('.hero__mask');
+	var maskedElement = qs('#mask-circle');
+	var circleFeedback = qs('#circle-shadow');
+	var svgPoint = svgElement.createSVGPoint();
+
+	function cursorPoint(e, svg) {
+	    svgPoint.x = e.clientX;
+	    svgPoint.y = e.clientY;
+	    return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+	}
+
+	function update(svgCoords) {
+	    maskedElement.setAttribute('cx', svgCoords.x);
+	    maskedElement.setAttribute('cy', svgCoords.y);
+	    circleFeedback.setAttribute('cx', svgCoords.x);
+	    circleFeedback.setAttribute('cy', svgCoords.y);
+	}
+
+	window.addEventListener('mousemove', function(e) {
+		console.log(e.clientY);
+
+		if(e.clientY <= 10 || e.clientY + document.scrollingElement.scrollTop > qs('.hero').clientHeight) {
+			maskedElement.setAttribute('r', 0);
+			circleFeedback.setAttribute('r', 0);
+		} else {
+			maskedElement.setAttribute('r', '15%');
+			circleFeedback.setAttribute('r', '15%');
+		}
+	  update(cursorPoint(e, svgElement));
+	}, false);
 });
 
 function qs (selector, searchIn) {

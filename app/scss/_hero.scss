@@ -1,3 +1,7 @@
+:root {
+  --clip-position: center;
+}
+
 .hero {
    position: relative;
    z-index: 1;
@@ -62,14 +66,28 @@
       border-bottom: 1px solid #fff;
    }
 
-   &__bg {
-      object-fit: cover;
-      z-index: -1;
+   circle {
+      transition: r .4s;
    }
 
-   .mask {
-      background-color: #000;
-      opacity: .7;
+   &__mask {
       z-index: -1;
+   }
+   &__bg {
+      z-index: -1;
+
+      img {
+         object-fit: cover;
+         object-position: center top;
+      }
+
+      &-shaded {
+         filter: brightness(.4) grayscale(1);
+      }
+
+      &-mask {
+         clip-path: url(#mask);
+         transition: .15s;
+      }
    }
 }

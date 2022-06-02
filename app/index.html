@@ -121,12 +121,26 @@
 						</div>
 					</div>
 				</div>
-				<figure>
-					<img class="hero__bg abs-full lazyload" src="img/hero_bg.jpg" data-src="img/hero_bg.jpg" alt="">
-					<div class="mask abs-full">
-						<div class="cursor"></div>
-					</div>
+
+				<figure class="hero__bg abs-full hero__bg-shaded">
+					<img class="abs-full lazyload" data-src="img/1920.jpg" alt="">
 				</figure>
+
+			
+				<figure class="hero__bg  abs-full hero__bg-mask">
+					<img class="abs-full lazyload" data-src="img/1920.jpg" alt="">
+				</figure>
+
+				<svg class="hero__mask abs-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+				  <defs>
+				    <clipPath id="mask">
+				      <circle id="mask-circle" cx="50%" cy="50%" r="15%" style="fill: #ffffff"/>
+				    </clipPath>
+				  </defs>
+				  
+				  <circle id="circle-shadow" cx="50%" cy="50%" r="15%" style="stroke: #fff; fill: transparent; stroke-width: 1; stroke-opacity: .25" />
+				</svg>
+
 			</div>
 		</section>
 
