@@ -25,6 +25,15 @@
 
 @media (max-width: 767px) {
    .plan {
+      .container {
+         padding-bottom: 88px;
+         padding-right: 0;
+      }
+
+      h2 {
+         margin-bottom: 40px;
+      }
+
       h3 {
          text-align: left;
       }

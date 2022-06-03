@@ -18,6 +18,10 @@
 
 @media (max-width: 767px) {
    .about {
+      h2 {
+         margin-bottom: 29px;
+      }
+      
       &__desc {
          padding-left: 0;
          max-width: none;

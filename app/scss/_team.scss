@@ -46,6 +46,28 @@
 
 @media (max-width: 767px) {
    .team {
+      .container {
+         padding-right: 0;
+      }
+
+      h2 {
+         margin-bottom: 30px;
+      }
+
+      h3 {
+         font-size: 20px;
+      }
+
+      &__title {
+      }
+
+      li {
+         .num {
+            font-size: 12px;
+            margin-bottom: 6px;
+         }
+      }
+
       &__items {
          &>div {
             max-width: none;

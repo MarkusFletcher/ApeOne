@@ -3,12 +3,14 @@
 @media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
-	section {}
-
+	html {
+	}
+	
 	.flex {
 		&.col-mob {
 			flex-direction: column;
 		}
+		
 		.w-100-mob {
 			flex-basis: 100%;
 			width: 100%;
@@ -19,8 +21,17 @@
 		display: none;
 	}
 
-	html {
+	section {
+		h2 {
+
+		}
 	}
+
+	.container {
+		margin: 0 24px 0 101px;
+		padding-top: 85px;
+	}
+
 
 	h1 {
 		font-size: 30px;
