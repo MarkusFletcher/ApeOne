@@ -34,10 +34,10 @@
       position: relative;
 
       &::before {
+         content: '';
          position: absolute;
          width: 150%;
          height: 150%;
-         content: '';
          top: -67%;
          z-index: -1;
          left: -23%;
@@ -83,6 +83,14 @@
       li .num,
       p {
          padding-left: 18px;
+      }
+
+      &__img {
+         width: 92%;
+
+         &::before {
+            display: none;
+         }
       }
    }
 }
