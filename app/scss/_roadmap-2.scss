@@ -27,10 +27,22 @@
       border-radius: 10rem;
    }
 
-   img {
+   &__img {
       width: 636rem;
       object-fit: contain;
       margin-top: auto;
+      position: relative;
+
+      &::before {
+         position: absolute;
+         width: 150%;
+         height: 150%;
+         content: '';
+         top: -67%;
+         z-index: -1;
+         left: -23%;
+         background: radial-gradient(rgba(255,255,255,.3), rgba(255,255,255,0) 60%);
+      }
    }
 
    li .num,

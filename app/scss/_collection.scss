@@ -9,12 +9,21 @@
       padding-bottom: 162rem;
    }
 
-   img {
-      // flex-basis: 45%;
+   &__img {
       width: 636rem;
-      object-fit: contain;
       margin-top: auto;
-      // height: auto;
+      position: relative;
+
+      &::before {
+         position: absolute;
+         width: 150%;
+         height: 150%;
+         content: '';
+         top: -40%;
+         z-index: -1;
+         left: -16%;
+         background: radial-gradient(rgba(255,255,255,.3), rgba(255,255,255,0) 60%);
+      }
    }
 
    h2 {
