@@ -1,6 +1,8 @@
 .contacts {
    position: relative;
    z-index: 11;
+   margin: 0 93rem;
+   padding: 0;
    background-color: #000;
    border-top: 1px solid rgba($color: #fff, $alpha: .5);
 
@@ -44,14 +46,14 @@
       border-top: none;
 
       .container {
-         padding-right: 0;
+         padding: 80px 0 90px;
          align-items: flex-start;
          border-top: 1px solid rgba($color: #fff, $alpha: .5);
       }
 
       &__collaborate {
          font-size: 20px;
-         margin-bottom: 30px;
+         margin-bottom: 40px;
       }
 
       [href^=mailto] {

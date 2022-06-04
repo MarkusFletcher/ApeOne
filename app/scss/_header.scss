@@ -28,5 +28,60 @@
          height: 58px;
          width: 58px;
       }
+
+      &__hamb, &__close {
+         width: 40px;
+         height: 40px;
+         z-index: 4;
+         position: fixed;
+         top: 17px;
+         right: 20px;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 50%;
+         }
+      }
+      &__close {
+         &::after {
+            display: none;
+         }
+         img {
+            width: 20px;
+         }
+      }
+   }
+   .nav-mob {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      transform: none;
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      transition: .25s;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+
+
+      &.active {
+         opacity: 1;
+         visibility: visible;
+         transition: .25s;
+      }
+      &__buttons {
+         gap: 10px;
+      }
    }
 }

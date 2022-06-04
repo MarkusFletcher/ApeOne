@@ -76,8 +76,9 @@
       }
 
       &__items {
+         gap: 15px;
          &>div {
-            max-width: none;
+            max-width: 50%;
          }
       }
    }

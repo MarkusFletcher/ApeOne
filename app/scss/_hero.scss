@@ -91,3 +91,131 @@
       }
    }
 }
+
+@media (max-width: 767px) {
+   .hero {
+      &__main {
+         // height: 100vh;
+         min-height: auto;
+         padding-top: 115px;
+      }
+
+      h1 {
+         line-height: 1.1;
+      }
+
+      &__mint {
+         max-width: 150px;
+      }
+
+      .button {
+         font-size: 15px;
+         border-radius: 4px;
+         padding: 3px 0;
+      }
+
+      &__counter {
+         font-size: 15px;
+         margin-top: 5px;
+         padding: 4px 0px;
+         border-color: rgba(255,255,255,.5);
+
+         button {
+            color: #fff;
+            font-size: inherit;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            min-width: 40px;
+         }
+      }
+
+      &__video {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         left: 0;
+         
+         &.playing {
+            .hero__controls {
+               opacity: 0;
+               visibility: hidden;
+            }
+            .play {
+               display: none;
+            }
+            .pause {
+               display: block;
+            }
+            &.cursor {
+               &:hover {
+                  .hero__controls {
+                     opacity: 1;
+                     visibility: visible;
+                  }
+               }
+            }
+            &.clicked {
+               .hero__controls {
+                  opacity: 1;
+                  visibility: visible;
+               }
+            }
+         }
+      }
+      &__controls {
+         background: rgba(0, 0, 0, .5);
+         z-index: 3;
+         transition: .2s;
+         img {
+            width: 60px;
+            cursor: pointer;
+         }
+         .pause {
+            display: none;
+         }
+      }
+   }
+
+   .plyr {
+       max-width: 100%;
+       position: relative;
+   }
+
+   .plyr video {
+       display: block;
+       height: 100%;
+       width: 100%
+   }
+
+
+   .plyr:focus {
+       outline: 0
+   }
+
+   .plyr__poster {
+       background-position: 50% 50%;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100%;
+       left: 0;
+       opacity: 0;
+       position: absolute;
+       top: 0;
+       transition: opacity .2s ease;
+       width: 100%;
+       z-index: 1
+   }
+
+   .plyr--stopped.plyr__poster-enabled .plyr__poster {
+       opacity: 1
+   }
+}
+
+
+
+
+
+
+
+

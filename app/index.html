@@ -99,6 +99,85 @@
 			</a>
 		</div>
 
+		<div class="header__hamb mob"></div>
+
+		<div class="nav-mob mob">
+			<div class="nav-mob__top flex jcsb aifs">
+				<img data-src="img/logo.svg" class="lazyload header__logo" alt="">
+
+				<div class="nav-mob__close">
+					<img src="img/close.svg" alt="">
+				</div>
+			</div>
+
+			<ul class="nav-mob__links">
+				<li>
+					<div class="num">
+						01
+					</div>
+					<a href="#">
+						Collection
+					</a>
+				</li>
+				<li>
+					<div class="num">
+						02
+					</div>
+					<a href="#">
+						Roadmap
+					</a>
+				</li>
+				<li>
+					<div class="num">
+						03
+					</div>
+					<a href="#">
+						Team A1
+					</a>
+				</li>
+				<li>
+					<div class="num">
+						04
+					</div>
+					<a href="#">
+						FAQ's
+					</a>
+				</li>
+				<li>
+					<div class="num">
+						05
+					</div>
+					<a href="#">
+						Contacts
+					</a>
+				</li>
+			</ul>
+
+			<div class="footer__buttons flex col jcsb">
+				<a href="" class="button w-100-mob">Whitelist Access</a>
+				<div class="flex nav-mob__buttons">
+					<a href="" class="button half">opensea</a>
+					<a href="" class="button half">Discord</a>
+				</div>
+				
+
+				<div class="footer__soc flex jcsb">
+					<a href="">
+						<img src="img/discord.svg" alt="">
+					</a>
+					<a href="">
+						<img src="img/ship.svg" alt="">
+					</a>
+					<a href="">
+						<img src="img/twitter.svg" alt="">	  
+					</a>
+					<a href="">
+						<img src="img/inst.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
 		<section class="hero" id="hero">
 			<div class="hero__main flex col">
 				<h1 class="text-center">
@@ -113,7 +192,7 @@
 						<button>+</button>
 					</div>
 				</div>
-				<div class="hero__sale-info flex jcse">
+				<div class="d-none-mob hero__sale-info flex jcse">
 					<div class="text-center">
 						<div class="hero__sale-type">Pre-sale</div>
 						<div class="hero__sale-time">
@@ -130,16 +209,16 @@
 					</div>
 				</div>
 
-				<figure class="hero__bg abs-full hero__bg-shaded">
+				<figure class="d-none-mob hero__bg abs-full hero__bg-shaded">
 					<img class="abs-full lazyload" data-src="img/1920.jpg" alt="">
 				</figure>
 
 			
-				<figure class="hero__bg  abs-full hero__bg-mask">
+				<figure class="d-none-mob hero__bg  abs-full hero__bg-mask">
 					<img class="abs-full lazyload" data-src="img/1920.jpg" alt="">
 				</figure>
 
-				<svg class="hero__mask abs-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+				<svg class="d-none-mob hero__mask abs-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
 				  <defs>
 				    <clipPath id="mask">
 				      <circle id="mask-circle" cx="50%" cy="50%" r="15%" style="fill: #ffffff"/>
@@ -149,6 +228,20 @@
 				  <circle id="circle-shadow" cx="50%" cy="50%" r="15%" style="stroke: #fff; fill: transparent; stroke-width: 1; stroke-opacity: .25" />
 				</svg>
 
+
+<!-- data-poster="/path/to/poster.jpg"  -->
+
+				<div class="rel hero__video d-none-desc cursor">
+					<div class="hero__controls abs-full">
+						<img class="play abs-center" src="img/play.svg">
+						<img class="pause abs-center" src="img/pause.svg">
+					</div>
+
+					<video id="player" playsinline controls loop muted data-plyr-config='{ "controls": "[]" }'>
+					  <source src="video/vid.mp4" type="video/mp4" />
+					</video>
+				</div>
+				
 			</div>
 		</section>
 
@@ -516,9 +609,11 @@
 						<a href="">License</a>
 					</li>
 				</ul>
-				<div class="half flex col jcsb">
-					<button class="button">Buy now on opensea</button>
-					<button class="button">Join Discord</button>
+
+				<div class="footer__buttons half flex col jcsb">
+					<a href="" class="button">Buy now on opensea</a>
+					<a href="" class="button">Join Discord</a>
+
 					<div class="footer__soc flex jcsb">
 						<a href="">
 							<img src="img/discord.svg" alt="">
@@ -560,8 +655,7 @@
 	<script async type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
 
-	<script defer type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+	<script defer src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
 
 	<script defer src="js/common.js"></script>
 
