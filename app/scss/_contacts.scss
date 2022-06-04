@@ -26,8 +26,15 @@
       font-size: 65rem;
       padding-bottom: 19rem;
       border-bottom: 1px solid rgba($color: #fff, $alpha: 1.0);
+
       span {
          font-weight: 100;
+      }
+      img {
+         display: inline;
+         width: 60rem;
+         height: 45rem;
+         margin-right: 53rem;
       }
    }
 }
