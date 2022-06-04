@@ -37,8 +37,8 @@
          content: '';
          position: absolute;
          width: 150%;
-         height: 150%;
-         top: -67%;
+         height: 130%;
+         top: -48%;
          z-index: -1;
          left: -23%;
          background: radial-gradient(rgba(255,255,255,.3), rgba(255,255,255,0) 60%);
@@ -91,7 +91,7 @@
          img {
             width: 92%;
          }
-         
+
          &::before {
             display: none;
          }
