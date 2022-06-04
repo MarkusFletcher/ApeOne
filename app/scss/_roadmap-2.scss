@@ -86,8 +86,12 @@
       }
 
       &__img {
-         width: 92%;
+         width: 100%;
 
+         img {
+            width: 92%;
+         }
+         
          &::before {
             display: none;
          }
