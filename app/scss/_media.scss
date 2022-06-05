@@ -12,10 +12,6 @@
 	html {
 	}
 	
-	.fixed {
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
 	.flex {
 		&.col-mob {
 			flex-direction: column;
@@ -46,6 +42,9 @@
 		padding-top: 85px;
 	}
 
+	.button {
+		border-radius: 3px;
+	}
 
 	h1 {
 		font-size: 30px;

@@ -1,5 +1,10 @@
 .social {
     z-index: 10;
+
+    &.fixed {
+        padding: 100rem 93rem 50rem;
+    }
+    
     a {
         margin-bottom: 14px;
         display: flex;

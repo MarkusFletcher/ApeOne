@@ -99,9 +99,9 @@
 			</a>
 		</div>
 
-		<div class="header__hamb mob"></div>
+		<div class="header__hamb d-none-desc"></div>
 
-		<div class="nav-mob mob">
+		<div class="nav-mob d-none-desc">
 			<div class="nav-mob__top flex jcsb aifs">
 				<img data-src="img/logo.svg" class="lazyload header__logo" alt="">
 
@@ -110,7 +110,7 @@
 				</div>
 			</div>
 
-			<ul class="nav-mob__links">
+			<ul class="nav-mob__list">
 				<li>
 					<div class="num">
 						01
@@ -247,10 +247,28 @@
 
 		<div class="sale-bar flex">
 			<div class="half text-center">
-				<span>PRE-SALE</span> → May 02nd, 2 P.M EST → <span>0 DAYS 00:00:00<span></span>
+				<span>
+					<img class="d-none-desc" src="img/arrow_bottom.svg" alt="">
+					PRE-SALE
+					<img class="d-none-desc" src="img/arrow_bottom.svg" alt="">
+				</span> 
+				<span class="d-none-mob">→</span>
+				May 02nd, 2 P.M EST 
+				<span class="d-none-mob">→</span>
+				<span class="d-none-desc">|</span>
+				<span>0 DAYS 00:00:00</span>
 			</div>
 			<div class="half text-center">
-				<span>PUBLIC SALE</span> → May 04th, 6 P.M EST → <span>0 DAYS 00:00:00</span>
+				<span>
+					<img class="d-none-desc" src="img/arrow_bottom.svg" alt="">
+					PUBLIC SALE
+					<img class="d-none-desc" src="img/arrow_bottom.svg" alt="">
+				</span> 
+				<span class="d-none-mob">→</span>
+				May 04th, 6 P.M EST 
+				<span class="d-none-mob">→</span> 
+				<span class="d-none-desc">|</span>
+				<span>0 DAYS 00:00:00</span>
 			</div>
 		</div>
 
@@ -563,28 +581,28 @@
 			</div>
 		</section>
 
-		<footer class="footer flex">
-			<div class="footer__desc half flex">
+		<footer class="footer flex col-mob">
+			<div class="footer__desc half w-100-mob flex">
 				<img class="footer__logo lazyload" data-src="img/logo.svg" alt="">
 				<div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 						tincidunt ut
-						laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+						laoreet <span class="d-none-mob">dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</span>
 					</p>
 					<h2>
-						Ape One <span>(A1)</span> Collection
+						Ape One <span class="d-none-mob">(A1)</span> Collection
 					</h2>
 					<p>
 						Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-						consequat. Duis
-						autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse.
+						consequat. <span class="d-none-mob">Duis
+						autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie conse.</span>
 					</p>
 				</div>
 			</div>
-			<div class="footer__actions half flex">
-				<ul class="half">
-					<li>
+			<div class="footer__actions half w-100-mob flex col-mob">
+				<ul class="half w-100-mob">
+					<li class="d-none-mob">
 						<a href="">Home</a>
 					</li>
 					<li>
@@ -605,12 +623,12 @@
 					<li>
 						<a href="">Whitelist</a>
 					</li>
-					<li>
+					<li class="d-none-mob">
 						<a href="">License</a>
 					</li>
 				</ul>
 
-				<div class="footer__buttons half flex col jcsb">
+				<div class="footer__buttons half w-100-mob flex col jcsb">
 					<a href="" class="button">Buy now on opensea</a>
 					<a href="" class="button">Join Discord</a>
 
@@ -630,7 +648,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer__copy">Ape One (A1) Collection 2022 ©</div>
+			<div class="footer__copy">
+				<span>Ape One <span class="d-none-mob">(A1)</span></span> 
+				<span>Collection</span> 
+				<span>2022 ©</span>
+			</div>
 		</footer>
 
 	</div>

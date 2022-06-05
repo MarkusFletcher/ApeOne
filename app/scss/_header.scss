@@ -1,6 +1,10 @@
 .header {
    z-index: 10;
 
+   &.fixed {
+      padding: 100rem 93rem 50rem;
+   }
+
    &__logo {
       width: 117rem;
       height: 125rem;
@@ -11,13 +15,17 @@
       font-weight: 100;
       height: 100rem;
       width: 100rem;
-      border: 1px rgba($color: #fff, $alpha: .4) solid;
+      border: 1px rgba($color: #fff, $alpha: 0.4) solid;
       border-radius: 50%;
    }
 }
 
 @media (max-width: 767px) {
    .header {
+      &.fixed {
+         padding: 25px 20px;
+      }
+
       &__logo {
          width: 59px;
          height: 63px;
@@ -29,7 +37,8 @@
          width: 58px;
       }
 
-      &__hamb, &__close {
+      &__hamb,
+      &__close {
          width: 40px;
          height: 40px;
          z-index: 4;
@@ -40,7 +49,7 @@
          align-items: center;
          justify-content: flex-end;
          &::after {
-            content: '';
+            content: "";
             display: block;
             width: 24px;
             height: 24px;
@@ -55,33 +64,6 @@
          img {
             width: 20px;
          }
-      }
-   }
-   .nav-mob {
-      position: fixed;
-      z-index: 10;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      transform: none;
-      color: #fff;
-      opacity: 0;
-      visibility: hidden;
-      transition: .25s;
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto;
-
-
-      &.active {
-         opacity: 1;
-         visibility: visible;
-         transition: .25s;
-      }
-      &__buttons {
-         gap: 10px;
       }
    }
 }

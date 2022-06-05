@@ -95,17 +95,19 @@
 @media (max-width: 767px) {
    .hero {
       &__main {
-         // height: 100vh;
+         height: calc(100vh - 59px);
          min-height: auto;
          padding-top: 115px;
       }
 
       h1 {
          line-height: 1.1;
+         z-index: 4;
       }
 
       &__mint {
          max-width: 150px;
+         z-index: 4;
       }
 
       .button {

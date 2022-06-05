@@ -25,10 +25,28 @@
       }
    }
 
-   span {
+   span:not(.d-none-desc) {
       font-weight: bold;
    }
 }
 @media (max-width: 767px) {
-   
+   .sale-bar {
+      font-size: 9px;
+      
+      div {
+         padding-top: 14px;
+         padding-bottom: 14px;
+      }
+
+      span {
+         img {
+            display: inline;
+            width: 10px;
+         }
+         &:first-child {
+            display: block;
+            font-size: 15px;
+         }
+      }
+   }
 }
