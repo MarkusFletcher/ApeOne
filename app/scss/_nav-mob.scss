@@ -27,6 +27,19 @@
             margin-bottom: 40px;
         }
 
+        &__close {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: end;
+            padding-top: 2px;
+            padding-right: 2px;
+            img {
+               width: 20px;
+               height: 20px;
+            }
+        }
+
         &__list {
             li {
                 padding-bottom: 8px;
