@@ -1,27 +1,24 @@
 .sale-bar {
    font-size: 26rem;
    font-weight: 100;
-   // letter-spacing: normal;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   background: #000;
+   transform: translate3d(0, -100%, 0);
+   transition: .2s;
+   border-bottom: 1px solid rgba(255,255,255,.5);
 
+   &.active {
+      transform: translate3d(0, 0, 0);
+   }
    div {
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      padding-top: 16rem;
-      padding-bottom: 17rem;
-
-      &:not(:last-child) {
-         margin-right: 29rem;
-         position: relative;
-
-         &::after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            right: -14rem;
-            top: 8rem;
-            bottom: 8rem;
-            background-color: #fff;
-         }
+      padding-top: 14rem;
+      padding-bottom: 13rem;
+      &:first-child {
+         border-right: 1px solid rgba(255,255,255,.5);
       }
    }
 
@@ -34,8 +31,8 @@
       font-size: 9px;
       
       div {
-         padding-top: 14px;
-         padding-bottom: 14px;
+         padding-top: 10px;
+         padding-bottom: 10px;
       }
 
       span {

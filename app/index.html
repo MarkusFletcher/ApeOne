@@ -33,7 +33,7 @@
 		<header class="header fixed flex col jcsb">
 			<img data-src="img/logo.svg" class="lazyload header__logo" alt="">
 
-			<nav class="headnav">
+			<nav class="headnav bg-shadow">
 				<ul>
 					<li>
 						<div class="num">
@@ -105,7 +105,7 @@
 			<div class="nav-mob__top flex jcsb aifs">
 				<img data-src="img/logo.svg" class="lazyload header__logo" alt="">
 
-				<div class="nav-mob__close">
+				<div class="header__close">
 					<img src="img/close.svg" alt="">
 				</div>
 			</div>
@@ -193,14 +193,14 @@
 					</div>
 				</div>
 				<div class="d-none-mob hero__sale-info flex jcse">
-					<div class="text-center">
+					<div class="text-center bg-shadow">
 						<div class="hero__sale-type">Pre-sale</div>
 						<div class="hero__sale-time">
 							May 02nd, 2 P.M EST <br>
 							0 days 00:00:00
 						</div>
 					</div>
-					<div class="text-center">
+					<div class="text-center bg-shadow">
 						<div class="hero__sale-type">Public sale</div>
 						<div class="hero__sale-time">
 							May 04th, 6 P.M EST <br>
@@ -229,15 +229,13 @@
 				</svg>
 
 
-<!-- data-poster="/path/to/poster.jpg"  -->
-
 				<div class="rel hero__video d-none-desc cursor">
 					<div class="hero__controls abs-full">
 						<img class="play abs-center" src="img/play.svg">
 						<img class="pause abs-center" src="img/pause.svg">
 					</div>
 
-					<video id="player" playsinline controls loop muted data-plyr-config='{ "controls": "[]" }'>
+					<video id="player" playsinline controls loop muted data-plyr-config='{ "controls": "[]" }' data-poster="img/video-poster.jpg">
 					  <source src="video/vid.mp4" type="video/mp4" />
 					</video>
 				</div>
@@ -674,6 +672,20 @@
 
 
 	<!-- LAZYLOAD -->
+
+	<script>
+		if(window.innerWidth < 768) {
+			let hero = document.querySelector('.hero'),
+				header = document.querySelector('.header');
+
+			hero.style.height = window.innerHeight + 'px';
+			header.style.height = window.innerHeight + 'px';
+
+			window.onresize = () => {
+				header.style.height = window.innerHeight + 'px';
+			}
+		}
+	</script>
 	<script async type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
 

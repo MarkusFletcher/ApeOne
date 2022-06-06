@@ -18,6 +18,11 @@ window.onload = () => {
 		titles = qsa('.roadmap__cont h3'),
 		scale = 0;
 
+	let scrollInEl = qs('.about'),
+		sticky = qs('.sale-bar');
+
+	let stickyShifted = qsa('.header__logo, .header__hamb');
+
 	line.style.height = (line.clientHeight - lastListItem.clientHeight) + 'px';
 	let lineHeight = line.clientHeight;
 
@@ -28,6 +33,25 @@ window.onload = () => {
 	    window.msRequestAnimationFrame;
 
     (function step() {
+
+    	if(scrollInEl.getBoundingClientRect().top <= 0) {
+    		sticky.classList.add('active');
+
+    		if(window.innerWidth < 768) {
+    			stickyShifted.forEach((el) => {
+    				el.style.transform = `translate3d(0,${qs('.sale-bar').clientHeight}px,0)`;
+    			})
+    		}
+    	} else {
+    		sticky.classList.remove('active');
+
+    		if(window.innerWidth < 768) {
+    			stickyShifted.forEach((el) => {
+    				el.style.transform = `translate3d(0,0,0)`;
+    			})
+    		}
+    	}
+
     	scale = (rectBottom(line) - lineHeight - window.innerHeight/2) / -lineHeight;
 
     	if(inViewport(line)) {
@@ -68,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	window.onscroll = () => {
 	    currentScroll = document.scrollingElement.scrollTop;
 		currentScroll = Math.round(currentScroll / scrollHeight * 100);
-	    showScroll.innerHTML = (currentScroll < 10 ? '0' : '') + currentScroll + '%';
+	    showScroll.innerHTML = currentScroll + '%';
 	}
 
 	
@@ -108,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	window.addEventListener('mousemove', function(e) {
-		if(e.clientY <= 10 || e.clientY + document.scrollingElement.scrollTop > qs('.hero').clientHeight) {
+		if(e.clientY <= 50 || e.clientY + document.scrollingElement.scrollTop > qs('.hero').clientHeight) {
 			maskedElement.setAttribute('r', 0);
 			circleFeedback.setAttribute('r', 0);
 		} else {
@@ -122,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	let hamb = qs('.header__hamb'),
 		menu = qs('.nav-mob'),
-		close = qs('.nav-mob__close');
+		close = qs('.header__close');
 
 	var scrolled;
 
@@ -152,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	const player = new Plyr('#player');
 
 	if(isTouchDevice) {
+
 		video.classList.remove('cursor');
 
 		video.onclick = () => {

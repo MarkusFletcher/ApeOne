@@ -140,6 +140,7 @@ body {
 
 .header {
 	height: 100%;
+	transition: .2s ease;
 }
 
 .social {
@@ -299,6 +300,23 @@ h1 {
 
 	span {
 		font-weight: 100;
+	}
+}
+.bg-shadow {
+	position: relative;
+	&::before {
+		z-index: 1;
+	   content: '';
+	   position: absolute;
+	   width: 150%;
+	   height: 150%;
+	   left: -25%;
+	   top: -25%;
+	   background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,.4) 40%, rgba(0,0,0,0) 70%);
+	}
+	>* {
+		position: relative;
+		z-index: 2;
 	}
 }
 

@@ -8,8 +8,9 @@
 
    &__main {
       height: 100vh;
-      min-height: 800px;
       padding-top: 83rem;
+      min-height: 50vw;
+      max-height: 75vw;
    }
 
    h1 {
@@ -91,12 +92,12 @@
       }
    }
 }
-
 @media (max-width: 767px) {
    .hero {
       &__main {
-         height: calc(100vh - 59px);
+         height: 100vh;
          min-height: auto;
+         max-height: none;
          padding-top: 115px;
       }
 
