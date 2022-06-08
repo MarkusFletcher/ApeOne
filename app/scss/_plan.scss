@@ -21,6 +21,13 @@
    &__items {
       gap: 90rem;
    }
+   &__item {
+      max-width: 30%;
+
+      p:not(:last-child) {
+         margin-bottom: 10rem;
+      }
+   }
 }
 
 @media (max-width: 767px) {
@@ -36,6 +43,13 @@
 
       h3 {
          text-align: left;
+      }
+
+      &__item {
+         max-width: none;
+         p:not(:last-child) {
+            margin-bottom: 8px;
+         }
       }
    }
 }

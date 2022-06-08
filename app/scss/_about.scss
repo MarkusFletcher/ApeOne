@@ -3,15 +3,9 @@
       padding-left: 300rem;
       max-width: 875rem;
       margin-bottom: 125rem;
-   }
 
-   &__keywords {
-      font-size: 50rem;
-      font-weight: 300;
-
-      span {
-         padding: 5rem 45rem 14rem;
-         border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+      p {
+         margin-bottom: 16rem;
       }
    }
 }
@@ -25,15 +19,9 @@
       &__desc {
          padding-left: 0;
          max-width: none;
-      }
-   
-      &__keywords {
-         font-size: 20px;
-         font-weight: 400;
-   
-         span {
-            padding-left: 0;
-            margin-bottom: 19px;
+
+         p {
+            margin-bottom: 10px;
          }
       }
    }

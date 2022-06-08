@@ -23,7 +23,7 @@
 
    &__items {
       flex-grow: 1;
-      gap: 30rem;
+      gap: 30rem 0;
       padding-top: 50rem;
       border-top: 1px solid rgba($color: #fff, $alpha: 1.0);
       &>div {
@@ -76,7 +76,7 @@
       }
 
       &__items {
-         gap: 15px;
+         gap: 15px 0;
          &>div {
             max-width: 50%;
          }
