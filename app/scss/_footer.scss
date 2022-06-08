@@ -10,7 +10,7 @@
       font-weight: 400;
       font-size: 50rem;
       letter-spacing: -0.066em;
-      margin: 16rem 0 24rem;
+      margin: 24rem 0 34rem;
    }
 
    p {
@@ -29,12 +29,13 @@
       gap: 80rem;
       padding-right: 60rem;
       p:first-child {
-         margin-bottom: 34rem;
+         // margin-bottom: 34rem;
       }
    }
 
    &__logo {
-      width: 300rem;
+      min-width: 210rem;
+      width: 210rem;
    }
 
    &__actions {
@@ -87,8 +88,8 @@
 
       h2 {
          font-weight: 400;
-         font-size: 18px;
-         margin: 16rem 0 24rem;
+         font-size: 17px;
+         margin: 10px 0;
       }
 
       p {
@@ -99,9 +100,6 @@
          padding-top: 0;
          padding-bottom: 0;
          padding-right: 60rem;
-         p:first-child {
-            margin-bottom: 34rem;
-         }
          & > div {
             width: 50%;
             padding: 20px 0 24px 24px;
@@ -122,6 +120,7 @@
          padding-left: 0;
          
          ul {
+            text-align: center;
             column-count: 3;
             padding-top: 24px;
             padding-bottom: 10px;

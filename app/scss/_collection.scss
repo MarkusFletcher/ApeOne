@@ -38,7 +38,7 @@
 @media (max-width: 767px) {
    .collection {
       &__info {
-         
+         flex-basis: 100%;
          h3 {
             margin: 32px 0 6px;
          }

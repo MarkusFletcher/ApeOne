@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	var svgElement = qs('.hero__mask');
 	var maskedElement = qs('#mask-circle');
-	var circleFeedback = qs('#circle-shadow');
+	// var circleFeedback = qs('#circle-shadow');
 	var svgPoint = svgElement.createSVGPoint();
 
 	function cursorPoint(e, svg) {
@@ -127,17 +127,17 @@ document.addEventListener("DOMContentLoaded", function() {
 	function update(svgCoords) {
 	    maskedElement.setAttribute('cx', svgCoords.x);
 	    maskedElement.setAttribute('cy', svgCoords.y);
-	    circleFeedback.setAttribute('cx', svgCoords.x);
-	    circleFeedback.setAttribute('cy', svgCoords.y);
+	    // circleFeedback.setAttribute('cx', svgCoords.x);
+	    // circleFeedback.setAttribute('cy', svgCoords.y);
 	}
 
 	window.addEventListener('mousemove', function(e) {
 		if(e.clientY <= 50 || e.clientY + document.scrollingElement.scrollTop > qs('.hero').clientHeight) {
 			maskedElement.setAttribute('r', 0);
-			circleFeedback.setAttribute('r', 0);
+			// circleFeedback.setAttribute('r', 0);
 		} else {
 			maskedElement.setAttribute('r', '15%');
-			circleFeedback.setAttribute('r', '15%');
+			// circleFeedback.setAttribute('r', '15%');
 		}
 
 	  update(cursorPoint(e, svgElement));

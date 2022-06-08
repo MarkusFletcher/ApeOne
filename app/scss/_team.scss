@@ -30,7 +30,9 @@
          min-width: 200rem;
       }
    }
-
+   p {
+      margin-bottom: 15rem;
+   }
    li {
       margin-bottom: 120rem;
       gap: 164rem;
@@ -51,7 +53,7 @@
       }
 
       h2 {
-         margin-bottom: 30px;
+         margin-bottom: 40px;
       }
 
       h3 {
@@ -66,7 +68,7 @@
       }
 
       li {
-         gap: 8px;
+         gap: 16px;
          margin-bottom: 40px;
 
          .num {
@@ -76,9 +78,12 @@
       }
 
       &__items {
+         padding-top: 16px;
+         // margin-top: 10px;
          gap: 15px 0;
-         &>div {
-            max-width: 50%;
+         .half {
+            width: 100%;
+            // max-width: 100%;
          }
       }
    }

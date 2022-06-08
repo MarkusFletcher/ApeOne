@@ -19,13 +19,18 @@
    }
 
    &__items {
-      gap: 90rem;
+      gap: 60rem;
+   }
+   p {
+      font-size: 22rem;
+      margin-bottom: 16rem;
    }
    &__item {
-      max-width: 30%;
+      width: 48%;
 
-      p:not(:last-child) {
-         margin-bottom: 10rem;
+      &:first-child,
+      &:last-child {
+         width: 26%;
       }
    }
 }
@@ -43,12 +48,23 @@
 
       h3 {
          text-align: left;
+         padding-bottom: 12px;
+         margin-bottom: 15px;
       }
 
+      p {
+         font-size: 12px;
+         margin-bottom: 1em;
+      }
+      &__items {
+         gap: 30px;
+      }
       &__item {
-         max-width: none;
-         p:not(:last-child) {
-            margin-bottom: 8px;
+         width: 100%;
+
+         &:first-child,
+         &:last-child {
+            width: 100%;
          }
       }
    }
