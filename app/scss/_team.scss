@@ -29,6 +29,10 @@
       &>div {
          min-width: 200rem;
       }
+      img {
+         width: 25rem;
+         margin-right: 10rem;
+      }
    }
    p {
       margin-bottom: 15rem;
@@ -81,6 +85,11 @@
          padding-top: 16px;
          // margin-top: 10px;
          gap: 15px 0;
+
+         img {
+            width: 12px;
+            margin-right: 6px;
+         }
          .half {
             width: 100%;
             // max-width: 100%;
